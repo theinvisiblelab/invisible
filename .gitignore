@@ -1,0 +1,13 @@
+data/
+
+private/
+
+*.csv
+*.xlsx
+*.xls
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.rtf
+*.pdf
