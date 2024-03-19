@@ -1,6 +1,9 @@
 import streamlit as st
 import random
 
+# Set page to wide mode
+st.set_page_config(layout="wide")
+
 st.title("(in)visible")
 # st.write("Enabling fairer knowledge access")
 st.write("&nbsp;")
