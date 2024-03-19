@@ -1,6 +1,11 @@
 import streamlit as st
 import random
 
+st.title("(in)visible")
+# st.write("Enabling fairer knowledge access")
+st.write("&nbsp;")
+st.write("Choose a category to explore invisible content.")
+
 # Define a list of films as above
 films = [
     {
@@ -125,32 +130,53 @@ films = [
     }
 ]
 
-st.title("Invisible Film")
+# Dropdown for page navigation
+page = st.selectbox("", ('', 'Films', 'Music', 'Books', 'News'))
 
-# Button
-if st.button('Find an invisible film!'):
-    # Randomly select one film
-    selected_film = random.choice(films)
-    
-    # Display the plot description
-    st.write(f"**{selected_film['title']}** ({selected_film['year']})")
-    st.write(f"*Director: {selected_film['director']}*")
+if page == 'Films':
 
-    random_number = random.randint(1, 1000)
-    image_url = "https://picsum.photos/id/" + str(random_number) + "/200/300"
-    st.markdown("<img src=" + image_url + "/>", unsafe_allow_html=True)
+    if st.button('Find an invisible film!'):
+        selected_film = random.choice(films)
 
-    st.write("&nbsp;")
-    st.write(selected_film['plot'])
-    
-    # Create and display a markdown table with the selected film's details
-    table_markdown = f"""
-    | Title          | Director       | Year |
-    |----------------|----------------|------|
-    | {selected_film['title']} | {selected_film['director']} | {selected_film['year']} |
+        st.write(f"**{selected_film['title']}** ({selected_film['year']})")
+
+        random_number = random.randint(1, 250)
+        image_url = f"https://picsum.photos/id/{random_number}/200/300"
+        st.markdown(f"<img src='{image_url}'/>", unsafe_allow_html=True)
+
+        st.write("&nbsp;")
+        st.write(selected_film['plot'])
+
+        table_markdown = f"""
+        | Title          | Director       | Year |
+        |----------------|----------------|------|
+        | {selected_film['title']} | {selected_film['director']} | {selected_film['year']} |
+        """
+        st.markdown(table_markdown)
+
+        st.write("&nbsp;")
+        st.warning("Dummy responses above! Application under development...")
+
+elif page == 'Music':
+    # Here, you can add functionality to find invisible music.
+    # Since we're dealing with dummy responses for now:
+    st.warning("Application under development...")
+
+elif page == 'Books':
+    # Similarly, add functionality for finding invisible books.
+    st.warning("Application under development...")
+
+elif page == 'News':
+    # And functionality for finding invisible news.
+    st.warning("Application under development...")
+
+st.write("&nbsp;")
+st.write("&nbsp;")
+st.write("&nbsp;")
+with st.expander("What is this about?"):
+    st.write("""
+        The internet has transformed how we live, affecting our social lives, economies, politics, and culture. But it’s not just fake news or biased articles we should worry about. There’s a hidden issue that’s just as tricky: we’re only seeing part of the picture, or just the tip of the information iceberg. When we search online or scroll across media feeds, the first thing that pops up gets most of the attention — more than half the clicks, actually. Then what about the relevant content that almost never makes it to the top of the list?
+
+It turns out a lot of information just doesn’t get seen. We tackle this challenge by creating a way to dynamically measure how visible information really is when we are online. The next step? We are starting to put together a website for everyone to use that will spotlight obscure films, music, and books that are almost always missed out. Each day, this platform will leverage data from sources like IMDb, the Milling Songs Database, and the Free Music Archive to find and share such hidden gems. This way, we can all contribute to the development of a fairer internet enabling access to truly diverse knowledge.
     """
-    st.markdown(table_markdown)
-
-    st.markdown("&nbsp;")
-
-    st.warning("dummy responses above! application under development...")
+    )
