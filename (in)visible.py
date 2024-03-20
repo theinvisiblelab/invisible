@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # Set page to wide mode
-st.set_page_config(layout="wide")
+st.set_page_config(page_icon="🕯️", page_title="the (in)visible lab")
 
 hide_st_style = """
             <style>
@@ -14,10 +14,11 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-st.title("(in)visible")
-# st.write("Enabling fairer knowledge access")
+st.title("🕯️ the (in)visible lab")
+st.write("_enabling fairer knowledge access_")
 st.write("&nbsp;")
-st.write("Choose a category to explore invisible content.")
+
+st.sidebar.info("The (in)visible lab is housed at the Amsterdam School of Communication Research (ASCoR), University of Amsterdam. Please reach out to our [team](https://theinvisiblelab.streamlit.app/team) for more information.")
 
 # Define a list of films as above
 films = [
@@ -143,12 +144,14 @@ films = [
     }
 ]
 
-# Dropdown for page navigation
+# Dropdown for page
+st.write("Choose a category to explore invisible content.")
 page = st.selectbox("", ('', 'Films', 'Music', 'Books', 'News'))
 
 if page == 'Films':
 
     if st.button('Find an invisible film!'):
+        st.write("&nbsp;")
         selected_film = random.choice(films)
 
         st.write(f"**{selected_film['title']}** ({selected_film['year']})")
@@ -168,28 +171,29 @@ if page == 'Films':
         st.markdown(table_markdown)
 
         st.write("&nbsp;")
-        st.warning("Dummy responses above! Application under development...")
+        st.info("Dummy responses above! Application under development...")
 
 elif page == 'Music':
     # Here, you can add functionality to find invisible music.
     # Since we're dealing with dummy responses for now:
-    st.warning("Application under development...")
+    st.info("Application under development...")
 
 elif page == 'Books':
     # Similarly, add functionality for finding invisible books.
-    st.warning("Application under development...")
+    st.info("Application under development...")
 
 elif page == 'News':
     # And functionality for finding invisible news.
-    st.warning("Application under development...")
+    st.info("Application under development...")
 
 st.write("&nbsp;")
 st.write("&nbsp;")
 st.write("&nbsp;")
-with st.expander("What is this about?"):
+
+with st.expander("About the (in)visible lab"):
     st.write("""
         The internet has transformed how we live, affecting our social lives, economies, politics, and culture. But it’s not just fake news or biased articles we should worry about. There’s a hidden issue that’s just as tricky: we’re only seeing part of the picture, or just the tip of the information iceberg. When we search online or scroll across media feeds, the first thing that pops up gets most of the attention — more than half the clicks, actually. Then what about the relevant content that almost never makes it to the top of the list?
 
-It turns out a lot of information just doesn’t get seen. We tackle this challenge by creating a way to dynamically measure how visible information really is when we are online. The next step? We are starting to put together a website for everyone to use that will spotlight obscure films, music, and books that are almost always missed out. Each day, this platform will leverage data from sources like IMDb, the Milling Songs Database, and the Free Music Archive to find and share such hidden gems. This way, we can all contribute to the development of a fairer internet enabling access to truly diverse knowledge.
+    It turns out a lot of information just doesn’t get seen. We tackle this challenge by creating a way to dynamically measure how visible information really is when we are online. The next step? We are starting to put together a website for everyone to use that will spotlight obscure films, music, and books that are almost always missed out. Each day, this platform will leverage data from sources like IMDb, the Milling Songs Database, and the Free Music Archive to find and share such hidden gems. This way, we can all contribute to the development of a fairer internet enabling access to truly diverse knowledge.
     """
     )
