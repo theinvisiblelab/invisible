@@ -1,1 +1,1 @@
-# invisiblecalc
+# 🕯️ the (in)visible lab

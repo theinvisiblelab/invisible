@@ -1,7 +1,5 @@
 import streamlit as st
-import random
 
-# Set page to wide mode
 st.set_page_config(page_icon="🕯️", page_title="the (in)visible lab")
 
 hide_st_style = """
@@ -20,32 +18,9 @@ st.write("&nbsp;")
 
 st.sidebar.info("The (in)visible lab is housed in the Amsterdam School of Communication Research, University of Amsterdam. Please reach out to our [team](https://theinvisiblelab.streamlit.app/team) for more information.")
 
+st.header("📚 research")
 
-option = st.radio("Calculate invisible information by:",
-                    ('Searching the internet', 'Uploading your own dataset'))
-
-st.write("&nbsp;")
-if option == 'Searching the internet':
-    # User opts to search the internet
-    search_query = st.text_input("Enter a search query").lower().strip()
-    if search_query:
-        st.write("You entered:", search_query)
-        # Implement your search functionality here
-        st.info("Search functionality to be implemented...")
-
-elif option == 'Uploading your own dataset':
-    # User opts to upload their own dataset
-    st.write("You can upload CSV or excel files.")
-    uploaded_file = st.file_uploader("Choose your file")
-    if uploaded_file is not None:
-        # Assuming a CSV file, you can adjust based on your needs
-        # To handle the uploaded file, you might use Pandas, for example:
-        # df = pd.read_csv(uploaded_file)
-        # st.write(df)
-        st.info("File upload functionality to be implemented...")
-        # Implement your file handling and analysis functionality here
-
-
+st.write("Our list of research papers goes here.")
 
 st.write("&nbsp;")
 st.write("&nbsp;")
