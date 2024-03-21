@@ -29,8 +29,6 @@ if option == 'Searching the internet':
     # User opts to search the internet
     search_query = st.text_input("Enter a search query").lower().strip()
     if search_query:
-        st.write("You entered:", search_query)
-        # Implement your search functionality here
         st.info("Search functionality to be implemented...")
 
 elif option == 'Uploading your own dataset':
