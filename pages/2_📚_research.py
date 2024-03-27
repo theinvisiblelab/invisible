@@ -13,11 +13,11 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.title("🕯️ The (In)visible Lab")
-st.write("_Enabling fairer knowledge access_")
+st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 
 st.sidebar.info("The (In)visible Lab is housed in the Amsterdam School of Communication Research, University of Amsterdam. Please reach out to our [team](https://theinvisiblelab.streamlit.app/team) for more information.")
 
 st.header("📚 Research")
 
-st.write("Our list of research papers goes here.")
+tab1, tab2, tab3, tab4, tab5 = st.tabs(['Published papers', 'Working papers', 'Book chapters', 'Datasets', 'Conferences'])

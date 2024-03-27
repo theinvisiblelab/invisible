@@ -15,7 +15,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.title("🕯️ The (In)visible Lab")
-st.write("_Enabling fairer knowledge access_")
+st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 
 st.header("🔦 Discover")
@@ -148,9 +148,9 @@ films = [
 
 # Dropdown for page
 st.write("Choose a category to explore invisible content.")
-page = st.radio("", ('Films', 'Music', 'Books', 'News'))
+tab1, tab2, tab3, tab4 = st.tabs(['Films', 'Music', 'Books', 'News'])
 
-if page == 'Films':
+with tab1:
 
     if st.button('Find an invisible film!'):
         st.write("&nbsp;")
@@ -175,18 +175,18 @@ if page == 'Films':
         st.write("&nbsp;")
         st.info("Dummy responses above! Application under development...")
 
-elif page == 'Music':
+with tab2:
     # Here, you can add functionality to find invisible music.
     # Since we're dealing with dummy responses for now:
     if st.button('Find an invisible piece of music!'):
         st.info("Application under development...")
 
-elif page == 'Books':
+with tab3:
     # Similarly, add functionality for finding invisible books.
     if st.button('Find an invisible book!'):
         st.info("Application under development...")
 
-elif page == 'News':
+with tab4:
     # And functionality for finding invisible news.
     if st.button('Find some invisible news!'):
         st.info("Application under development...")
