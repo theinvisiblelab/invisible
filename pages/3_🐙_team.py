@@ -25,8 +25,7 @@ st.write("&nbsp;")
 with st.expander("Saurabh Khanna", expanded = True):
     st.image("images/saurabh_khanna.jpg", caption="saurabh.khanna@uva.nl", width=200)
     st.write("""
-            Saurabh Khanna is an Assistant Professor in Communication Science at the University of Amsterdam, and a Research Associate at the University of Oxford. He leverages machine learning and information retrieval to study the diversity and limits of human knowledge in an increasingly digitized world. Saurabh received his PhD in education policy and computer science from Stanford University, where he was a Human-centered AI Fellow, a Stanford Data Science Scholar, and a William R and Sara Hart Kimball Fellow. His prior background spans computer science engineering (BITS Pilani), economics (Stanford), and education (TISS).
-             More [here](https://saurabh-khanna.github.io/).
+            Saurabh Khanna is an Assistant Professor in Communication Science at the University of Amsterdam, and a Research Associate at the University of Oxford. He leverages machine learning and information retrieval to study the diversity and limits of human knowledge in an increasingly digitized world. Saurabh received his PhD in education policy and computer science from Stanford University, where he was a Human-centered AI Fellow, a Stanford Data Science Scholar, and a William R and Sara Hart Kimball Fellow. His prior background spans computer science engineering (BITS Pilani), economics (Stanford), and education (TISS).More [here](https://saurabh-khanna.github.io/).
         """)
 
 with st.expander("Olga Eisele", expanded = True):
