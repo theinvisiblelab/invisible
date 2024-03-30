@@ -72,6 +72,7 @@ with Faculty:
                 Marina Tulin (PhD, UvA) is an Assistant Professor in Political Communication & Journalism as well as in the sector theme Education, Citizenship and Democracy in a Digital World. She conducts research on mis- and disinformation, fact-checking, media literacy and public trust in institutions like journalism and science.
             """)
 
+with Postdocs:
     with st.expander("Marieke van Hoof", expanded = True):
         st.image("images/marieke_van_hoof.jpeg", caption="m.vanhoof@uva.nl", width=200)
         st.write("""

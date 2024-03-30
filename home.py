@@ -18,7 +18,7 @@ st.title("🕯️ The (In)visible Lab")
 st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 
-st.sidebar.info("The (In)visible Lab is housed in the Amsterdam School of Communication Research, University of Amsterdam. Please reach out to our [team](https://theinvisiblelab.streamlit.app/team) for more information.")
+st.sidebar.info("The (In)visible Lab is housed in the Amsterdam School of Communication Research, University of Amsterdam. Please reach out to our [team](/team) for more information.")
 
 st.write("How much information stays invisible from me?")
 
