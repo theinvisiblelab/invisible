@@ -20,7 +20,7 @@ st.write("&nbsp;")
 
 st.header("🔦 discover")
 
-st.sidebar.info("The (in)visible lab is housed in the Amsterdam School of Communication Research, University of Amsterdam. Please reach out to our [team](https://theinvisiblelab.streamlit.app/team) for more information.")
+st.sidebar.info("**Supported By** \n\n 🌱 Amsterdam School of Communication Research \n\n 🌱 Social and Behavioural Data Science Centre, University of Amsterdam \n\n Reach out to our [team](/team) for feedback and/or collaboration.")
 
 # Define a list of films as above
 films = [
