@@ -18,9 +18,7 @@ st.title("🕯️ The (In)visible Lab")
 st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 
-st.sidebar.info("The (In)visible Lab is housed in the Amsterdam School of Communication Research, University of Amsterdam. Please reach out to our [team](/team) for more information.")
-
-# We are bombarded with 
+st.sidebar.info("**Supported By** \n\n 🌱 Amsterdam School of Communication Research \n\n 🌱 Social and Behavioural Data Science Centre, University of Amsterdam \n\n Reach out to our [team](/team) for feedback and/or collaboration.")
 
 with st.expander("Why The (In)visible Lab?"):
     st.write("""
