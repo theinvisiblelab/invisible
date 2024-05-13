@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_icon="🕯️", page_title="the (in)visible lab")
+st.set_page_config(page_icon="🕯️", page_title="The (In)visible Lab", layout="wide")
 
 hide_st_style = """
             <style>
