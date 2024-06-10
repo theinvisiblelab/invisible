@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_icon="🕯️", page_title="The (In)visible Hub", layout="wide")
+st.set_page_config(page_icon="🕯️", page_title="The (In)visible Lab", layout="wide")
 
 hide_st_style = """
             <style>
@@ -12,7 +12,7 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-st.title("🕯️ The (In)visible Hub")
+st.title("🕯️ The (In)visible Lab")
 st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 

@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # Set page to wide mode
-st.set_page_config(page_icon="🕯️", page_title="The (In)visible Hub", layout="wide")
+st.set_page_config(page_icon="🕯️", page_title="The (In)visible Lab", layout="wide")
 
 hide_st_style = """
             <style>
@@ -14,15 +14,15 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-st.title("🕯️ The (In)visible Hub")
+st.title("🕯️ The (In)visible Lab")
 st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 
 st.sidebar.info("**Supported By** \n\n 🌱 Amsterdam School of Communication Research \n\n 🌱 Social and Behavioural Data Science Centre, University of Amsterdam \n\n Reach out to our [team](/team) for feedback and/or collaboration.")
 
-with st.expander("Why The (In)visible Hub?"):
+with st.expander("Why The (In)visible Lab?"):
     st.write("""
-    The Internet revolution has not only digitized our lifestyles, but also introduced the challenge of _information invisibility_. Vital knowledge remains unseen due to ranking algorithms that maximize engagement, coupled with our limited mental capacity to process massive information ourselves. As a result, we are almost always consuming the tip of a pre-ranked information iceberg. _The (In)visible Hub_ poses urgent questions about the extent and resolution of our digital blind spots by aiming to:
+    The Internet revolution has not only digitized our lifestyles, but also introduced the challenge of _information invisibility_. Vital knowledge remains unseen due to ranking algorithms that maximize engagement, coupled with our limited mental capacity to process massive information ourselves. As a result, we are almost always consuming the tip of a pre-ranked information iceberg. _The (In)visible Lab_ poses urgent questions about the extent and resolution of our digital blind spots by aiming to:
              
     1.  dynamically calculate how much information stays invisible
     2.  actively make invisible information sources visible
