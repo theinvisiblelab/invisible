@@ -21,7 +21,7 @@ st.sidebar.info("**Supported By** \n\n 🌱 Amsterdam School of Communication Re
 st.header("🪴 Projects")
 
 with st.expander("Pictopercept", expanded = False):
-    st.image("images/saurabh_khanna.jpg", caption="saurabh.khanna@uva.nl", width=200)
+    # st.image("images/saurabh_khanna.jpg", caption="saurabh.khanna@uva.nl", width=200)
     st.write("""
             _PictoPercept_ is an innovative, open-source software that utilizes visual wiki surveys to assess societal biases and perceptions, particularly focusing on youth perceptions of occupational roles. By integrating visual stimuli into pairwise comparison methodologies, _PictoPercept_ unobtrusively captures perceptions related to potentially sensitive topics like gender and ethnic stereotypes in professions. Participants engage by selecting between images representing diverse demographic attributes, contributing to a dynamic and democratic data collection process. This method leverages the human brain's visual processing capabilities, providing researchers with nuanced insights into the formation and reinforcement of social stereotypes through a Bayesian statistical model. Aimed initially at Dutch youth, _PictoPercept_ is poised to significantly advance bias assessment methodologies and contribute valuable data to the fields of communication science and beyond. Sample survey hosted [here](https://pictopercept.streamlit.app/).
         """)
