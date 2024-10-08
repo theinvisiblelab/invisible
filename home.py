@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # Set page to wide mode
-st.set_page_config(page_icon="🕯️", page_title="The (In)visible Lab", layout="wide")
+st.set_page_config(page_icon="🕯️", page_title="The (In)visible Hub", layout="wide")
 
 hide_st_style = """
             <style>
@@ -14,45 +14,23 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-st.title("🕯️ The (In)visible Lab")
+st.title("🕯️ The (In)visible Hub")
 st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 
 st.sidebar.info("**Supported By** \n\n 🌱 Amsterdam School of Communication Research \n\n 🌱 Social and Behavioural Data Science Centre, University of Amsterdam \n\n Reach out to our [team](/team) for feedback and/or collaboration.")
 
-with st.expander("Why The (In)visible Lab?"):
+with st.expander("Why The (In)visible Hub?"):
     st.write("""
-    The Internet revolution has not only digitized our lifestyles, but also introduced the challenge of _information invisibility_. Vital knowledge remains unseen due to ranking algorithms that maximize engagement, coupled with our limited mental capacity to process massive information ourselves. As a result, we are almost always consuming the tip of a pre-ranked information iceberg. _The (In)visible Lab_ poses urgent questions about the extent and resolution of our digital blind spots by aiming to:
+    The Internet revolution has not only digitized our lifestyles, but also introduced the challenge of _information invisibility_. Vital knowledge remains unseen due to ranking algorithms that maximize engagement, coupled with our limited mental capacity to process massive information ourselves. As a result, we are almost always consuming the tip of a pre-ranked information iceberg. _The (In)visible Hub_ poses urgent questions about the extent and resolution of our digital blind spots by aiming to:
              
     1.  dynamically calculate how much information stays invisible
     2.  actively make invisible information sources visible
     """)
 
-tabA, tabB = st.tabs(["Assess information invisibility", "Make invisible information visible"])
+tabA, tabB = st.tabs(["Boost invisible information", "Measure invisible information"])
 
 with tabA:
-
-    calc_choice = st.radio("How much information stays invisible?", ['Search the internet', 'Upload your own dataset'])    
-
-    st.write("&nbsp;")
-    if calc_choice == 'Search the internet':
-        # User opts to search the internet
-        search_query = st.text_input("Enter a search query").lower().strip()
-        if search_query:
-            st.info("Web search functionality to be implemented...")
-
-    if calc_choice == 'Upload your own dataset':
-        # User opts to upload their own dataset
-        uploaded_file = st.file_uploader("Choose your CSV or excel file", type=['csv', 'tsv', 'xlsx', 'xls', 'sav', 'dta'])
-        if uploaded_file is not None:
-            # Assuming a CSV file, you can adjust based on your needs
-            # To handle the uploaded file, you might use Pandas, for example:
-            # df = pd.read_csv(uploaded_file)
-            # st.write(df)
-            st.info("File upload functionality to be implemented...")
-            # Implement your file handling and analysis functionality here
-
-with tabB:
     films = [
         {
             "title": "The Invisible Man",
@@ -218,3 +196,26 @@ with tabB:
         # And functionality for finding invisible news.
         if st.button('Find some invisible news!'):
             st.info("Application under development...")
+            
+
+with tabB:
+
+    calc_choice = st.radio("How much information stays invisible?", ['Upload your own dataset', 'Search the internet'])    
+
+    st.write("&nbsp;")
+    if calc_choice == 'Search the internet':
+        # User opts to search the internet
+        search_query = st.text_input("Enter a search query").lower().strip()
+        if search_query:
+            st.info("Web search functionality to be implemented...")
+
+    if calc_choice == 'Upload your own dataset':
+        # User opts to upload their own dataset
+        uploaded_file = st.file_uploader("Choose your CSV or excel file", type=['csv', 'tsv', 'xlsx', 'xls', 'sav', 'dta'])
+        if uploaded_file is not None:
+            # Assuming a CSV file, you can adjust based on your needs
+            # To handle the uploaded file, you might use Pandas, for example:
+            # df = pd.read_csv(uploaded_file)
+            # st.write(df)
+            st.info("File upload functionality to be implemented...")
+            # Implement your file handling and analysis functionality here

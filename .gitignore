@@ -1,6 +1,6 @@
 data/
-
 private/
+docs/
 
 *.csv
 *.xlsx
@@ -11,3 +11,5 @@ private/
 *.pptx
 *.rtf
 *.pdf
+.Rproj.user
+*.Rproj
