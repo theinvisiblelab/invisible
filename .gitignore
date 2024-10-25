@@ -1,6 +1,7 @@
 data/
 private/
 docs/
+code/
 
 *.csv
 *.xlsx

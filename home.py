@@ -14,7 +14,7 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-st.title("🕯️ The (In)visible Hub")
+st.title("🕯️ The (In)visible Lab")
 st.write(":gray[_Enabling fairer knowledge access_]")
 st.write("&nbsp;")
 
@@ -22,7 +22,7 @@ st.sidebar.info("**Supported By** \n\n 🌱 Amsterdam School of Communication Re
 
 with st.expander("Why (In)visible?"):
     st.write("""
-    The Internet revolution has not only digitized our lifestyles, but also introduced the challenge of _information invisibility_. Vital knowledge remains unseen due to ranking algorithms that maximize engagement, coupled with our limited mental capacity to process massive information ourselves. As a result, we are almost always consuming the tip of a pre-ranked information iceberg. _The (In)visible Hub_ poses urgent questions about the extent and resolution of our digital blind spots by aiming to:
+    The Internet revolution has not only digitized our lifestyles, but also introduced the challenge of _information invisibility_. Vital knowledge remains unseen due to ranking algorithms that maximize engagement, coupled with our limited mental capacity to process massive information ourselves. As a result, we are almost always consuming the tip of a pre-ranked information iceberg. _The (In)visible Lab_ poses urgent questions about the extent and resolution of our digital blind spots by aiming to:
              
     1.  dynamically calculate how much information stays invisible
     2.  actively make invisible information sources visible
@@ -219,3 +219,8 @@ with tabB:
             # st.write(df)
             st.info("File upload functionality to be implemented...")
             # Implement your file handling and analysis functionality here
+
+
+st.write("&nbsp;")
+st.write("&nbsp;")
+st.warning("🪜 Platform under development...")
