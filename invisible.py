@@ -17,7 +17,7 @@ with col1:
     TEXT = """
     The Internet has transformed our lives, but has also introduced the challenge of _invisible information_ — vital knowledge we consistently miss out on. In today's world of exponentially growing information, algorithms prioritize content that maximizes consumption, and humans deal with this already priotized content by consistently consuming the tip of the information iceberg. This is the challenge that The (In)visible Lab aims to tackle — by understanding, quantifying, and boosting invisible knowledge across the Internet.
 
-    We are presently leading research along four themes:
+    We are presently leading research along five themes:
     """
 
     # Initialize user ID and display text
@@ -28,7 +28,7 @@ with col1:
         st.write(TEXT)
 
 
-tab1, tab2, tab3, tab4 = st.tabs(["(In)visible", "PictoPercept", "Lost Without Translation", "Beyond Words"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["(In)visible", "PictoPercept", "Lost Without Translation", "Shadowbans", "Beyond Words"])
 
 with tab1:
     col_a, col_b = st.columns([3, 1])
@@ -66,6 +66,15 @@ with tab3:
     with col_f:
         st_lottie("https://lottie.host/3bfd556b-b768-4374-9c7f-06cc18463d6a/tkfyhGMudo.json")
 with tab4:
+    col_i, col_j = st.columns([3, 1])
+    with col_i:
+        st.write("Almost all of knowledge visible to us is built on communication among humans. Could we make the invisible visible by developing ways to communicate information effectively beyond our species? Beyond Words is attempt to answer these challenging questions.")
+        btn5 = st.button("Go to Shadowbans", use_container_width=True, type="primary")
+        if btn5:
+            st.info("🪜 Project web page under development!")
+    with col_j:
+        st_lottie("https://lottie.host/a10f69db-0a47-43db-b440-cc5765871d65/JT9bRzFTeZ.json")
+with tab5:
     col_g, col_h = st.columns([3, 1])
     with col_g:
         st.write("Almost all of knowledge visible to us is built on communication among humans. Could we make the invisible visible by developing ways to communicate information effectively beyond our species? Beyond Words is attempt to answer these challenging questions.")
