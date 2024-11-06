@@ -68,7 +68,7 @@ with tab3:
 with tab4:
     col_i, col_j = st.columns([3, 1])
     with col_i:
-        st.write("Almost all of knowledge visible to us is built on communication among humans. Could we make the invisible visible by developing ways to communicate information effectively beyond our species? Beyond Words is attempt to answer these challenging questions.")
+        st.write("Shadowbans investigates how shadow banning contributes to invisible information in online communities. Shadow banning occurs when a user's content is hidden or de-emphasized without their knowledge, often through algorithms or moderation practices. This means users might think their posts are visible, but others can't see them, leading to a form of censorship that isn't immediately apparent. We intend to explore the impact of these practices on information visibility and to shed light on how they shape our digital interactions.")
         btn5 = st.button("Go to Shadowbans", use_container_width=True, type="primary")
         if btn5:
             st.info("🪜 Project web page under development!")
