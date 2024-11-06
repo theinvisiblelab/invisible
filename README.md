@@ -1,6 +1,7 @@
 # 🕯️ (in)visible
 
-The Internet revolution has not only digitized our lifestyles, but also introduced the challenge of _information invisibility_. Vital knowledge remains unseen due to ranking algorithms that maximize engagement, coupled with our limited mental capacity to process massive information ourselves. As a result, we are almost always consuming the tip of a pre-ranked information iceberg. _(In)visible_ poses urgent questions about the extent and resolution of our digital blind spots by aiming to:
+<img src="images/iceberg.gif" width="300">
 
-1. dynamically calculate how much information stays invisible
-2. actively make invisible information sources visible
+The Internet has transformed our lives, but has also introduced the challenge of _invisible information_ — vital knowledge we consistently miss out on. In today's world of exponentially growing information, algorithms prioritize content that maximizes consumption, and humans deal with this already priotized content by consistently consuming the tip of the information iceberg. This is the challenge that The (In)visible Lab aims to tackle — by understanding, quantifying, and boosting invisible knowledge across the Internet.
+
+Learn more: [theinvisiblelab.org](https://theinvisiblelab.org)
