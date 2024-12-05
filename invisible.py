@@ -15,9 +15,9 @@ with col2:
 
 with col1:
     TEXT = """
-    The Internet has transformed our lives, but has also introduced the challenge of _invisible information_ — vital knowledge we consistently miss out on. In today's world of exponentially growing information, algorithms prioritize content that maximizes consumption, and humans deal with this already priotized content by consistently consuming the tip of the information iceberg. This is the challenge that The (In)visible Lab aims to tackle — by understanding, quantifying, and boosting invisible knowledge across the Internet.
+    The Internet has transformed our lives, but has also introduced the challenge of _invisible information_ — vital knowledge we consistently miss out on. In today's world of exponentially growing information, algorithms prioritize content that maximizes consumption, and humans deal with this already priotized content by consistently consuming the tip of the information iceberg. This is the challenge we aim to tackle — by understanding, quantifying, and boosting invisible knowledge across the Internet.
 
-    We are presently leading research along five themes:
+    We are presently leading research along these themes:
     """
 
     # Initialize user ID and display text
@@ -28,7 +28,7 @@ with col1:
         st.write(TEXT)
 
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["(In)visible", "PictoPercept", "Lost Without Translation", "Shadowbans", "Beyond Words"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["[In]visible", "PictoPercept", "Lost Without Translation", "Shadowbans", "Beyond Words"])
 
 with tab1:
     col_a, col_b = st.columns([3, 1])
@@ -51,6 +51,7 @@ with tab1:
                 st.info("Application under development...")
     with col_b:
         st_lottie("https://lottie.host/ec3d9846-8444-4cfc-ae03-502e05cb7b93/MMktMDfAsz.json")
+
 with tab2:
     col_c, col_d = st.columns([2.6, 1])
     with col_c:
@@ -58,6 +59,7 @@ with tab2:
         btn2 = st.link_button("Go to PictoPercept", url = "https://pictopercept.streamlit.app/", use_container_width=True, type="primary")
     with col_d:
         st_lottie("https://lottie.host/a0357f2b-b951-4f69-b9e8-35b36e79b386/9B0IQaQ77q.json")
+
 with tab3:
     col_e, col_f = st.columns([3, 1])
     with col_e:
@@ -65,6 +67,7 @@ with tab3:
         btn3 = st.link_button("Go to Lost Without Translation", url = "https://invisiblelang.streamlit.app/", use_container_width=True, type="primary")
     with col_f:
         st_lottie("https://lottie.host/3bfd556b-b768-4374-9c7f-06cc18463d6a/tkfyhGMudo.json")
+
 with tab4:
     col_i, col_j = st.columns([3, 1])
     with col_i:
@@ -74,6 +77,7 @@ with tab4:
             st.info("🪜 Project web page under development!")
     with col_j:
         st_lottie("https://lottie.host/a10f69db-0a47-43db-b440-cc5765871d65/JT9bRzFTeZ.json")
+
 with tab5:
     col_g, col_h = st.columns([3, 1])
     with col_g:
