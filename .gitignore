@@ -1,6 +1,7 @@
 data/
 private/
 docs/
+posters/
 code/
 
 *.csv
